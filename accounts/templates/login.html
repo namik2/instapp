@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="namik2">
+<title>Log in</title>
+</head>
+<body>    
+      <!-- ESTIMATE SHIPPING & TAX -->
+      <div class="col-sm-7">
+        <h6>LOG IN</h6>
+        <form id="login-form" action="" method="POST">
+          {% csrf_token %}
+          <div>
+            {{ form.email.label_tag }}
+            {{ form.email }}
+          </div>
+          <div>
+            {{ form.password.label_tag }}
+            {{ form.password }}
+          </div>
+          <button type="submit" class="btn btn-solid">Log IN</button>
+        </form>     
+      </div>   
+              
+</body>
+</html>

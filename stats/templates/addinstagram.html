@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="M_Adnan">
+<title>Add Instagram</title>
+</head>
+<body>           
+    <div class="col-sm-12" style="top:500px">
+        <h6>Add Instagram</h6>
+        <form method="POST">
+          {% csrf_token %}
+          <div>
+            {{ form.username.label_tag}}
+            {{ form.username }}
+            {{ form.username.errors}}
+          </div>
+          <div>
+            {{ form.password.label_tag}}
+            {{ form.password }}
+            {{ form.password.errors}}
+          </div>
+          <button type="submit" class="btn btn-solid">Add Instagram</button>
+        </form>
+</body>
+</html>

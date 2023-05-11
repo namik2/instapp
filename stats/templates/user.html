@@ -1,0 +1,32 @@
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Hello User</title>
+</head>
+<body>
+    <div class="box" style="background-color: black;">
+      <div class="form" style="background-color: black;padding: 18px 40px;">
+        <img src="{% static 'img/user.png' %}" alt="" srcset="">
+        <div style="text-align: center;">
+   
+
+            {% for data in instagram_data %}
+            <p style="color:white">username:  {{ data.username }}</p>
+            <p style="color:white"> following: {{ data.following }}</p>
+            <p style="color:white">follower:  {{ data.follower }}</p>
+            {% endfor %}
+        
+        </div>
+      </div>
+  </div>
+      </form>
+</body>
+</html>
