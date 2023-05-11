@@ -1,7 +1,7 @@
 # instapp
 Celery + Selenium + Django APP
 
-<img align="left" alt="Instapp" width="1200px" src="[https://i.ibb.co/CsWpPsw/gfg.png](https://i.ibb.co/RN8tRtT/INSTA-2.png)" /><br>
+<img align="left" alt="Instapp" width="1200px" src="https://i.ibb.co/RN8tRtT/INSTA-2.png" /><br>
 
 ### Hi there 👋, I'm Namik
 
